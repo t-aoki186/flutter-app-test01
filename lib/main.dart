@@ -2,6 +2,7 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+// 以下のMyAppで定義したアプリの実行をFlutterに指示
 void main() {
   runApp(MyApp());
 }
@@ -29,6 +30,7 @@ class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
 }
 
+// 状態変化しない部品(ウィジェット)
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
